@@ -1,2 +1,2 @@
-# .NET_Lecture_Materials
-YetGen Jump &amp; Akbank Backend Education Program's Live Lecture Materials for Students
+# .NET Lecture Materials
+YetGen Jump Jump; Akbank Backend Education Program's Live Lecture Materials for Students
