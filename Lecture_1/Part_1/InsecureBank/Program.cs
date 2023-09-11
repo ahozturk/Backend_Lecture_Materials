@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lecture_1.InsecureBank;
+namespace Lecture_1.Part_1.InsecureBank;
 class Program
 {
     static List<string> accountOwners = new List<string>();

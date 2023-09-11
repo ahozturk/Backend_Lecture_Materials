@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+namespace Lecture_1.Part_1.InsecureBank;
 class Program
 {
     static List<string> customers = new List<string>();
