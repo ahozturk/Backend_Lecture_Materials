@@ -35,9 +35,6 @@ class Program
                 case 4:
                     Console.WriteLine("Goodbye!");
                     return;
-                default:
-                    Console.WriteLine("Invalid choice. Please try again.");
-                    break;
             }
         }
     }
