@@ -11,7 +11,7 @@ class Program
     {
         while (true)
         {
-            Console.WriteLine("\n\n");
+            Console.WriteLine("\n");
             Console.WriteLine("Welcome to the Insecure Bank!");
             Console.WriteLine("1. Create an Account");
             Console.WriteLine("2. Deposit Money");
@@ -39,9 +39,6 @@ class Program
                 case 5:
                     Console.WriteLine("Thank you for using the Insecure Bank!");
                     return;
-                default:
-                    Console.WriteLine("Invalid choice. Please try again.");
-                    break;
             }
         }
     }
