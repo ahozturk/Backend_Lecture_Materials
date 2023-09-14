@@ -20,6 +20,8 @@ class Program
             Console.Write("Enter your choice: ");
 
             int choice = int.Parse(Console.ReadLine());
+            //todo: try-catch block will be added and assign a default value in catch 
+            //user can send a text which can not convert int
 
             switch (choice)
             {
@@ -35,6 +37,7 @@ class Program
                 case 4:
                     Console.WriteLine("Goodbye!");
                     return;
+                //todo: default block will be added to switch-case, write down a error message for user
             }
         }
     }
@@ -43,6 +46,12 @@ class Program
     {
         Console.Write("Enter customer name: ");
         string customerName = Console.ReadLine();
+
+        //todo: Control for customer name is null or white space
+        //user may enter space string like: "   " we musn't accept it!
+
+        //todo: Control for is there any same name in list which is added before
+
         customers.Add(customerName);
         Console.WriteLine($"Customer '{customerName}' added successfully!");
     }
@@ -52,8 +61,13 @@ class Program
         Console.Write("Enter customer name: ");
         string customerName = Console.ReadLine();
 
+        //todo: Control for is username exist
+
         Console.Write("Enter order details: ");
         string orderDetails = Console.ReadLine();
+        //todo: Control for order details is null or white space
+        //user may enter space string like: "   " we musn't accept it!
+
         orders.Add($"{customerName}: {orderDetails}");
         Console.WriteLine("Order placed successfully!");
 
@@ -61,6 +75,7 @@ class Program
 
     static void ViewOrders()
     {
+        //todo: Control for are there any order in (list) orders if there are nothing to show just write down "No Order Exist"
         Console.WriteLine("Orders:");
         foreach (var order in orders)
         {
