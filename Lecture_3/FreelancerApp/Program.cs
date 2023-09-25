@@ -5,15 +5,17 @@ Console.WriteLine("Freelance!");
 
 List<Customer> customers = new();
 
-//Customer customer = new()
-//{
-//    Id = Guid.NewGuid(),
-//    CreatedDate = DateTimeOffset.Now,
-//    FirstName = "Name 2",
-//    LastName = "Lastname 2"
-//};
+Customer customer1 = new()
+{
+    Id = Guid.NewGuid(),
+    CreatedDate = DateTimeOffset.Now,
+    FirstName = "Name 3",
+    LastName = "Lastname 3"
+};
 
 NotepadService notepadService = new();
+
+notepadService.SaveToNotepad(customer1);
 
 string[] lines = notepadService.ReadNotepad().Split("\n", StringSplitOptions.RemoveEmptyEntries);
 
