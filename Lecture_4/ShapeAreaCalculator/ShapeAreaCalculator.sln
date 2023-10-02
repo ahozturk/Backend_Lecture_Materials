@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{24C5A86B-9923-47F7-B37F-D91795741649}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapeAreaCalculator.Domain", "Core\ShapeAreaCalculator.Domain\ShapeAreaCalculator.Domain.csproj", "{304F5F59-DF41-42C9-B228-1DBDD88E041C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{67BE957C-3948-430E-8576-C009D9D058F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapeAreaCalculator.Infrastructure", "Infrastructure\ShapeAreaCalculator.Infrastructure\ShapeAreaCalculator.Infrastructure.csproj", "{CFA397C8-1EC1-48BD-84CF-5A4C0CABBEE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A40E292F-D493-4F3F-BF80-CE47FCF151E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeAreaCalculator.Console", "ShapeAreaCalculator.Console\ShapeAreaCalculator.Console.csproj", "{0AA1953B-6D4D-4EEA-B099-B0C110E44921}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{304F5F59-DF41-42C9-B228-1DBDD88E041C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304F5F59-DF41-42C9-B228-1DBDD88E041C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304F5F59-DF41-42C9-B228-1DBDD88E041C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304F5F59-DF41-42C9-B228-1DBDD88E041C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA397C8-1EC1-48BD-84CF-5A4C0CABBEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA397C8-1EC1-48BD-84CF-5A4C0CABBEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA397C8-1EC1-48BD-84CF-5A4C0CABBEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA397C8-1EC1-48BD-84CF-5A4C0CABBEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA1953B-6D4D-4EEA-B099-B0C110E44921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA1953B-6D4D-4EEA-B099-B0C110E44921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA1953B-6D4D-4EEA-B099-B0C110E44921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA1953B-6D4D-4EEA-B099-B0C110E44921}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{304F5F59-DF41-42C9-B228-1DBDD88E041C} = {24C5A86B-9923-47F7-B37F-D91795741649}
+		{CFA397C8-1EC1-48BD-84CF-5A4C0CABBEE9} = {67BE957C-3948-430E-8576-C009D9D058F4}
+		{0AA1953B-6D4D-4EEA-B099-B0C110E44921} = {A40E292F-D493-4F3F-BF80-CE47FCF151E4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A76865E2-C77B-4306-A953-553E9D0CF86E}
+	EndGlobalSection
+EndGlobal
