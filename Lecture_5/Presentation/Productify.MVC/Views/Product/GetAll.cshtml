@@ -1,0 +1,27 @@
+﻿@using Productify.Domain.Entities;
+@model List<Product>
+
+<h1>Product List Page</h1>
+
+<div class="container mt-3">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Created Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.CreatedOn</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
