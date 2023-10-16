@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ReDoMusic.Domain.Common;
 
-namespace ReDoMusic.Domain.Common
+namespace ReDoMusic.Domain.Entities
 {
     public class Brand : EntityBase<Guid>
     {

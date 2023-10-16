@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ReDoMusic.Domain.Common
 {
-    internal interface ICreatedOn
+    //
+    public interface ICreatedOn
     {
+        public DateTime CreatedOn { get; set; }
     }
 }

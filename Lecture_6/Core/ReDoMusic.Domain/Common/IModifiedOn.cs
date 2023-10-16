@@ -8,7 +8,6 @@ namespace ReDoMusic.Domain.Common
 {
     public interface IModifiedOn
     {
-        public DateTime ModifiedOn { get; set; }
-
+        public DateTime? ModifiedOn { get; set; }
     }
 }
