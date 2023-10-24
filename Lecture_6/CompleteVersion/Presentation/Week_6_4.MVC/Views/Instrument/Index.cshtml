@@ -1,0 +1,33 @@
+﻿@using Week_6_4.Domain.Entities
+@model List<Instrument>
+
+<head>
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        @foreach (var product in Model)
+        {
+                <div class="card column" style="width:400px;">
+                    <img class="card-img-top" src="@product.PictureUrl" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">@product.Name</h4>
+                        <p class="card-text">@product.Description</p>
+                        <a href="/instrument/inspect/@product.Id" class="btn btn-primary">Inspect</a>
+                    </div>
+                </div>
+        }
+    </div>
+</body>
+
+

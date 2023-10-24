@@ -1,0 +1,38 @@
+﻿@using Week_6_4.Domain.Entities;
+@model List<Brand>
+
+
+<form method="post">
+    <div class="mb-3 mt-3">
+        <label class="form-label">Name:</label>
+        <input type="text" class="form-control" placeholder="Enter Instrument Name" name="name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description:</label>
+        <input type="text" class="form-control" placeholder="Enter Instrument Description" name="description">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price:</label>
+        <input type="text" class="form-control" placeholder="Enter Price" name="price">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Barcode:</label>
+        <input type="text" class="form-control" placeholder="Enter Barcode" name="barcode">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Image:</label>
+        <input type="text" class="form-control" placeholder="Enter Barcode" name="pictureUrl">
+    </div>
+    <br />
+    <select name="brandId">
+        @foreach (var brand in Model)
+        {
+            <option value="@brand.Id">@brand.Name</option>
+        }
+    </select>
+    <br />
+    <br />
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form> 

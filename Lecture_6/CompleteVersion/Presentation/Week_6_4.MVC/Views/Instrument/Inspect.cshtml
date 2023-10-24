@@ -1,0 +1,18 @@
+﻿@using Week_6_4.Domain.Entities;
+@model Instrument
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="@Model.PictureUrl" alt="Product Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 class="my-3">@Model.Name</h2>
+                <p>@Model.Description</p>
+                <p>Price: $@Model.Price</p>
+                <button class="btn btn-outline-success">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,27 @@
+﻿@using Week_6_4.Domain.Entities;
+@model List<Brand>
+
+<div class="container mt-3">
+    <h2>Brands</h2>
+    <table class="table table-dark table-hover">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Desc.</th>
+                <th>Address</th>
+                <th width="20px">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var brand in Model)
+            {
+                <tr>
+                    <td>@brand.Name</td>
+                    <td>@brand.DisplayingText</td>
+                    <td>@brand.Address</td>
+                    <td><a href="/brand/delete/@brand.Id" class="btn btn-danger">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
