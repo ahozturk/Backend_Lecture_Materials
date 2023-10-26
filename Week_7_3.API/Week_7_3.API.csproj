@@ -11,4 +11,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lecture_8\Core\Week_7_3.Domain\Week_7_3.Domain.csproj" />
+    <ProjectReference Include="..\Lecture_8\Infrastructure\Week_7_3.Persistence\Week_7_3.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
