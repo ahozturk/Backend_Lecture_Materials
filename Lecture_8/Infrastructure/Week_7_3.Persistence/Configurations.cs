@@ -16,7 +16,7 @@ namespace Week_7_3.Persistence
             string path = $"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName}\\Infrastructure\\Week_7_3.Persistence";
 
             configurationManager.SetBasePath(path);
-            configurationManager.AddJsonFile("PrivateInformations.json");
+            configurationManager.AddJsonFile("PrivateInformation.json");
             return configurationManager.GetSection(key).Value;
         }
     }
