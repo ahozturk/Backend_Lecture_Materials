@@ -22,10 +22,10 @@ namespace Week_7_3.Persistence.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BankAccount>()
-                .HasOne(ba => ba.Owner)
-                .WithOne(p => p.Account)
-                .HasForeignKey<Person>(p => p.Id);
+            modelBuilder.Entity<Person>()
+                .HasOne(p => p.Account)
+                .WithOne(ba => ba.Owner)
+                .HasForeignKey<BankAccount>(ba => ba.Id);
 
             base.OnModelCreating(modelBuilder);
         }
