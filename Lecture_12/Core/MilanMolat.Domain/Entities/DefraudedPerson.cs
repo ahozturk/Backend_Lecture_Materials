@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MilanMolat.Domain.Entities
 {
-    public class DefraudedPeople
+    public class DefraudedPerson
     {
         public Guid Id { get; set; }
         public string FirstName { get; set; }
